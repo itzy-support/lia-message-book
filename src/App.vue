@@ -5,7 +5,12 @@
 
             <VToolbarTitle> {{ TITLE }} </VToolbarTitle>
 
-            <VBtn icon color="red-darken-1" @click="snackbar = true">
+            <VBtn
+                icon
+                color="red-darken-1"
+                href="https://drive.google.com/file/d/1IHoDgXQjkL2J1T0RKDNB5d_creweUapL/view?usp=drive_link"
+                target="_blank"
+            >
                 <VIcon icon="mdi-file-pdf-box" />
             </VBtn>
         </VAppBar>
@@ -37,17 +42,12 @@
             </VRow>
         </VMain>
 
-        <VSnackbar v-model="snackbar" :timeout="2000" rounded="pill">
-            2023-07-23 일요일 공개 예정입니다
-        </VSnackbar>
+        <!-- <VSnackbar v-model="snackbar" :timeout="2000" rounded="pill"></VSnackbar> -->
     </VApp>
 </template>
 
 <script setup>
 import { ref } from "vue";
-
-// href="https://drive.google.com/file/d/1CxS018u2PJoY-uZcptItN63iNDsQJlbD/view?usp=drive_link"
-// target="_blank"
 
 const TITLE = "July, Julia, LIA";
 
